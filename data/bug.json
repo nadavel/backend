@@ -29,10 +29,11 @@
   },
   {
     "title": "asdasd",
-    "severity": 3,
+    "severity": "10",
     "labels": [
       "important",
-      "urgent"
+      "urgent",
+      "fun"
     ],
     "desc": "lorem ipsum dolor sit amet, consectetur adip",
     "_id": "Bznjd",

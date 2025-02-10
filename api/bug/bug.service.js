@@ -31,6 +31,10 @@ async function query(filterBy = {}, sortBy = {}) {
         if (filterBy.minSeverity) {
             bugsToReturn = bugsToReturn.filter(bug => bug.severity >= +filterBy.minSeverity)
         }
+        if (filterBy.labels && filterBy.labels.length) {
+            const labelRegExp = new RegExp(filterBy.labels, 'i')
+            bugsToReturn = bugsToReturn.filter(bug => Array.isArray(bug.labels) && bug.labels.some(label => labelRegExp.test(label)))
+        }
 
         // Sorting
         if (sortBy.by === 'severity') {
@@ -39,6 +43,9 @@ async function query(filterBy = {}, sortBy = {}) {
         } else if (sortBy.by === 'title') {
             const dir = sortBy.sortDir ? +sortBy.sortDir : 1
             bugsToReturn.sort((b1, b2) => (b1.title.localeCompare(b2.title) * dir))
+        }else if (sortBy.by === 'createdAt') {
+            const dir = sortBy.sortDir ? +sortBy.sortDir : 1
+            bugsToReturn.sort((b1, b2) => (b1.createdAt - b2.createdAt) * dir)
         }
 
         // Pagination
