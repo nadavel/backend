@@ -1,9 +1,29 @@
 [
   {
     "_id": "u102",
-    "username": "muki",
+    "username": "mukiiiii",
     "fullname": "Muki Ba",
     "password": "secret2",
-    "score": 100
+    "score": 100,
+    "isAdmin": false,
+    "createdAt": 1684268916816
+  },
+  {
+    "_id": "uXs2Z",
+    "username": "falcon",
+    "fullname": "elad nadav",
+    "password": "123456",
+    "score": 100,
+    "isAdmin": false,
+    "createdAt": 1739162802798
+  },
+  {
+    "_id": "admin123",
+    "username": "admin",
+    "fullname": "Admin User",
+    "password": "admin",
+    "score": 100,
+    "isAdmin": true,
+    "createdAt": 1684268916816
   }
 ]

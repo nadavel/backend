@@ -3,7 +3,7 @@ import { loggerService } from '../../services/logger.service.js'
 
 // List
 export async function getBugs(req, res) {
-    loggerService.info(`getBugs called`)
+    // loggerService.info(`getBugs called`)
     try {
         const filterBy = {
             txt: req.query.filterBy.txt || '',
@@ -19,24 +19,25 @@ export async function getBugs(req, res) {
         res.send(bugs)
     } catch (err) {
         loggerService.error(err)
+        console.log(err)
         res.status(400).send(`Couldn't get bugs`, err)
     }
 }
 
 // Get
 export async function getBug(req, res) {
-    loggerService.info(`getBug called with id ${req.params.bugId}`)
     try {
         const { bugId } = req.params
         let visitedBugIds = req.cookies.visitedBugIds || []
         if (!visitedBugIds.includes(bugId)) visitedBugIds.push(bugId)
         if (visitedBugIds.length > 3) return res.status(404).send('Wait for a bit')
         const bug = await bugService.getById(bugId)
-        res.cookie('visitedBugIds', visitedBugIds, { maxAge: 1000 * 60 * 3 })
+        res.cookie('visitedBugIds', visitedBugIds, { maxAge: 1000 * 15 })
         loggerService.info(`getBug returned ${JSON.stringify(bug, null, 2)}`)
         res.send(bug)
     } catch (err) {
         loggerService.error(err)
+        console.log(err)
         res.status(400).send(`Couldn't get bug`, err)
     }
 }
@@ -52,6 +53,7 @@ export async function removeBug(req, res) {
         res.send('Deleted OK')
     } catch (err) {
         loggerService.error(err)
+        console.log(err)
         res.status(400).send(`Couldn't remove bug`, err)
     }
 }
@@ -73,11 +75,12 @@ export async function addBug(req, res) {
 
         const savedBug = await bugService.save(req.body)
         console.log(savedBug);
-        
+
         loggerService.info(`addBug saved ${JSON.stringify(savedBug, null, 2)}`)
         res.send(savedBug)
     } catch (err) {
         loggerService.error(err)
+        console.log(err)
         res.status(400).send(`Couldn't save bug`, err)
     }
 }
@@ -99,6 +102,7 @@ export async function updateBug(req, res) {
         res.send(savedBug)
     } catch (err) {
         loggerService.error(err)
+        console.log(err)
         res.status(400).send(`Couldn't save bug`, err)
     }
 }

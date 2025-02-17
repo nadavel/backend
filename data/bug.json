@@ -1,94 +1,222 @@
 [
   {
-    "title": "jkjjk",
-    "severity": 33,
     "_id": "hOW1z",
-    "createdAt": 1684268916816,
-    "desc": "lorem ipsum dolor sit amet, consectetur adip"
+    "title": "Cannot save a Car",
+    "desc": "errors when clicking Save",
+    "severity": 3,
+    "createdAt": 1542107359454,
+    "creator": {
+      "_id": "u102",
+      "fullname": "Muki Ba"
+    }
   },
   {
-    "title": "aaaaa",
-    "severity": 12,
     "_id": "CQk0G",
+    "title": "UI issue on Dashboard",
+    "desc": "The UI does not load properly on some screens",
+    "severity": 2,
     "createdAt": 1702304306389,
-    "desc": "lorem ipsum dolor sit amet, consectetur adip"
+    "creator": {
+      "_id": "falcon",
+      "fullname": "elad nadav"
+    }
   },
   {
-    "title": "my bug",
-    "severity": 3,
     "_id": "PirXj",
+    "title": "Bug in authentication",
+    "desc": "Login fails on certain user profiles",
+    "severity": 5,
     "createdAt": 1702470902547,
-    "desc": "lorem ipsum dolor sit amet, consectetur adip"
+    "creator": {
+      "_id": "falcon",
+      "fullname": "elad nadav"
+    }
   },
   {
-    "title": "risans bug",
-    "severity": 33,
-    "_id": "lKHUU",
-    "createdAt": 1702471064341,
-    "desc": "lorem ipsum dolor sit amet, consectetur adip"
-  },
-  {
-    "title": "asdasd",
-    "severity": "10",
-    "labels": [
-      "important",
-      "urgent",
-      "fun"
-    ],
-    "desc": "lorem ipsum dolor sit amet, consectetur adip",
     "_id": "Bznjd",
-    "createdAt": 1707392034969
+    "title": "Performance issues on server",
+    "desc": "Too many simultaneous requests cause a crash",
+    "severity": 1,
+    "createdAt": 1707392034969,
+    "creator": {
+      "_id": "u102",
+      "fullname": "Muki Ba"
+    }
   },
   {
-    "title": "asdasd",
-    "severity": 3,
-    "labels": [
-      "important",
-      "urgent"
-    ],
-    "desc": "lorem ipsum dolor sit amet, consectetur adip",
-    "_id": "k8ZrY",
-    "createdAt": 1707392063172
-  },
-  {
-    "title": "blablabla",
-    "severity": 3,
-    "labels": [
-      "important",
-      "urgent"
-    ],
-    "desc": "lorem ipsum dolor sit amet, consectetur adip",
-    "_id": "CLiyV",
-    "createdAt": 1707392088185
-  },
-  {
-    "title": "blablabla",
-    "severity": 3,
-    "labels": [
-      "important",
-      "urgent"
-    ],
-    "desc": "lorem ipsum dolor sit amet, consectetur adip",
-    "_id": "cHWfI",
-    "createdAt": 1707393932539
-  },
-  {
-    "title": "blablabla",
-    "severity": 3,
-    "labels": [
-      "important",
-      "urgent"
-    ],
-    "desc": "lorem ipsum dolor sit amet, consectetur adip",
-    "_id": "2jtgm",
-    "createdAt": 1707393939138
-  },
-  {
-    "title": "ad",
-    "severity": 55,
-    "labels": [],
-    "desc": "some basic descrition",
     "_id": "vJgC1",
-    "createdAt": 1707395564962
+    "title": "Error in data synchronization",
+    "desc": "Data mismatch between local storage and server",
+    "severity": 4,
+    "createdAt": 1707395564962,
+    "creator": {
+      "_id": "admin123",
+      "fullname": "Admin User"
+    }
+  },
+  {
+    "_id": "6UbR2",
+    "title": "Bug in user profile",
+    "desc": "Unable to update profile information",
+    "severity": 3,
+    "createdAt": 1707589125000,
+    "creator": {
+      "_id": "u102",
+      "fullname": "Muki Ba"
+    }
+  },
+  {
+    "_id": "5VbuS",
+    "title": "Missing data on dashboard",
+    "desc": "Some data points are missing from the dashboard overview",
+    "severity": 2,
+    "createdAt": 1707651457000,
+    "creator": {
+      "_id": "falcon",
+      "fullname": "elad nadav"
+    }
+  },
+  {
+    "_id": "Ad9M3",
+    "title": "Slow response time on API",
+    "desc": "API response time exceeds acceptable limits during peak hours",
+    "severity": 4,
+    "createdAt": 1707893455000,
+    "creator": {
+      "_id": "u102",
+      "fullname": "Muki Ba"
+    }
+  },
+  {
+    "_id": "LkQ4y",
+    "title": "Data export fails",
+    "desc": "The CSV export function fails to generate the correct data file",
+    "severity": 3,
+    "createdAt": 1707900142000,
+    "creator": {
+      "_id": "admin123",
+      "fullname": "Admin User"
+    }
+  },
+  {
+    "_id": "X9Oa1",
+    "title": "Missing icons on mobile view",
+    "desc": "Icons are not displaying on mobile devices",
+    "severity": 2,
+    "createdAt": 1707924981000,
+    "creator": {
+      "_id": "falcon",
+      "fullname": "elad nadav"
+    }
+  },
+  {
+    "_id": "Q3Wi6",
+    "title": "Error in notifications",
+    "desc": "Notifications do not appear for certain events",
+    "severity": 3,
+    "createdAt": 1707931900000,
+    "creator": {
+      "_id": "u102",
+      "fullname": "Muki Ba"
+    }
+  },
+  {
+    "_id": "Z0B1D",
+    "title": "Login fails after server restart",
+    "desc": "User cannot log in after a server restart",
+    "severity": 5,
+    "createdAt": 1707969021000,
+    "creator": {
+      "_id": "falcon",
+      "fullname": "elad nadav"
+    }
+  },
+  {
+    "_id": "C5GwQ",
+    "title": "Error with payment processing",
+    "desc": "Payments fail to process due to server errors",
+    "severity": 4,
+    "createdAt": 1708023123000,
+    "creator": {
+      "_id": "admin123",
+      "fullname": "Admin User"
+    }
+  },
+  {
+    "_id": "J4RiN",
+    "title": "Form submission failure",
+    "desc": "Forms are not submitting correctly under certain conditions",
+    "severity": 2,
+    "createdAt": 1708035344000,
+    "creator": {
+      "_id": "u102",
+      "fullname": "Muki Ba"
+    }
+  },
+  {
+    "_id": "B2TxP",
+    "title": "Crash on page load",
+    "desc": "App crashes when loading the page after login",
+    "severity": 5,
+    "createdAt": 1708064312000,
+    "creator": {
+      "_id": "admin123",
+      "fullname": "Admin User"
+    }
+  },
+  {
+    "_id": "T0Yb8",
+    "title": "Incorrect date formatting",
+    "desc": "Date formats appear incorrectly on reports",
+    "severity": 3,
+    "createdAt": 1708082133000,
+    "creator": {
+      "_id": "falcon",
+      "fullname": "elad nadav"
+    }
+  },
+  {
+    "_id": "F7NaL",
+    "title": "Error in email notifications",
+    "desc": "Users do not receive email notifications as expected",
+    "severity": 3,
+    "createdAt": 1708104075000,
+    "creator": {
+      "_id": "u102",
+      "fullname": "Muki Ba"
+    }
+  },
+  {
+    "_id": "X8TrF",
+    "title": "Broken link on help page",
+    "desc": "The contact link is broken on the help page",
+    "severity": 2,
+    "createdAt": 1708121235000,
+    "creator": {
+      "_id": "falcon",
+      "fullname": "elad nadav"
+    }
+  },
+  {
+    "_id": "D2FwZ",
+    "title": "Timeout on API request",
+    "desc": "API requests are timing out after 5 seconds",
+    "severity": 4,
+    "createdAt": 1708143401000,
+    "creator": {
+      "_id": "admin123",
+      "fullname": "Admin User"
+    }
+  },
+  {
+    "_id": "M9B5K",
+    "title": "Page freeze during navigation",
+    "desc": "App freezes when navigating to certain pages",
+    "severity": 5,
+    "createdAt": 1708172357000,
+    "creator": {
+      "_id": "u102",
+      "fullname": "Muki Ba"
+    }
   }
 ]
